@@ -6,4 +6,10 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\EiSys.GestaoDeEstoque.Application\EiSys.GestaoDeEstoque.Application.csproj" />
+    <ProjectReference Include="..\EiSys.GestaoDeEstoque.Data\EiSys.GestaoDeEstoque.Data.csproj" />
+    <ProjectReference Include="..\EiSys.GestaoDeEstoque.Domain\EiSys.GestaoDeEstoque.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
