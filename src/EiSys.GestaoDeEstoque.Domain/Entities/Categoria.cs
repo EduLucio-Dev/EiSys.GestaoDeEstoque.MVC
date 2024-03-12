@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace EiSys.GestaoDeEstoque.Domain.Entities
 {
-    internal class Categoria : EntitieBase
+    public sealed class Categoria : EntitieBase
     {
         public string? Nome { get; private set; }
 
@@ -23,7 +23,7 @@ namespace EiSys.GestaoDeEstoque.Domain.Entities
 
         public Categoria(int id, string nome)
         {
-            DomainExceptionValidation.when(id < 0, "Invalid Id value");
+            DomainExceptionValidation.when(id < 0, "Valor Invalido");
             Id = id;
             ValidaDominio(nome);
         }

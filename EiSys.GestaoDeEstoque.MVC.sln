@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34622.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EiSys.GestaoDeEstoque.WebUi", "src\EiSys.GestaoDeEstoque.WebUi\EiSys.GestaoDeEstoque.WebUi.csproj", "{5D2B9B93-2FC4-4D3B-BF93-5830D684263E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EiSys.GestaoDeEstoque.WebUi", "src\EiSys.GestaoDeEstoque.WebUi\EiSys.GestaoDeEstoque.WebUi.csproj", "{5D2B9B93-2FC4-4D3B-BF93-5830D684263E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EiSys.GestaoDeEstoque.Domain", "src\EiSys.GestaoDeEstoque.Domain\EiSys.GestaoDeEstoque.Domain.csproj", "{D43BCAF9-5F41-4AEA-8D39-E0DA97AF9CAC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EiSys.GestaoDeEstoque.Domain", "src\EiSys.GestaoDeEstoque.Domain\EiSys.GestaoDeEstoque.Domain.csproj", "{D43BCAF9-5F41-4AEA-8D39-E0DA97AF9CAC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EiSys.GestaoDeEstoque.Application", "src\EiSys.GestaoDeEstoque.Application\EiSys.GestaoDeEstoque.Application.csproj", "{AD6BD2BE-FB44-4357-A31B-35E5308B5485}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EiSys.GestaoDeEstoque.Application", "src\EiSys.GestaoDeEstoque.Application\EiSys.GestaoDeEstoque.Application.csproj", "{AD6BD2BE-FB44-4357-A31B-35E5308B5485}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EiSys.GestaoDeEstoque.Data", "src\EiSys.GestaoDeEstoque.Data\EiSys.GestaoDeEstoque.Data.csproj", "{83D65A81-5A51-4C1A-90D2-EDF090AF2EA4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EiSys.GestaoDeEstoque.Data", "src\EiSys.GestaoDeEstoque.Data\EiSys.GestaoDeEstoque.Data.csproj", "{83D65A81-5A51-4C1A-90D2-EDF090AF2EA4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EiSys.GestaoDeEstoque.Ioc", "src\EiSys.GestaoDeEstoque.Ioc\EiSys.GestaoDeEstoque.Ioc.csproj", "{4D3765B5-9AA3-46EE-99E2-8D7ED81CB1A1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EiSys.GestaoDeEstoque.Ioc", "src\EiSys.GestaoDeEstoque.Ioc\EiSys.GestaoDeEstoque.Ioc.csproj", "{4D3765B5-9AA3-46EE-99E2-8D7ED81CB1A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EiSys.GestaoDeEstoque.Domain.Test", "test\EiSys.GestaoDeEstoque.Domain.Test\EiSys.GestaoDeEstoque.Domain.Test.csproj", "{268A57A9-0970-4807-BAAD-C3877D86A1DF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{4D3765B5-9AA3-46EE-99E2-8D7ED81CB1A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4D3765B5-9AA3-46EE-99E2-8D7ED81CB1A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4D3765B5-9AA3-46EE-99E2-8D7ED81CB1A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{268A57A9-0970-4807-BAAD-C3877D86A1DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{268A57A9-0970-4807-BAAD-C3877D86A1DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{268A57A9-0970-4807-BAAD-C3877D86A1DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{268A57A9-0970-4807-BAAD-C3877D86A1DF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

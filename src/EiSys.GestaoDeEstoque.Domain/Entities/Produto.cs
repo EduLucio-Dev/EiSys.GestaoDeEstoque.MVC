@@ -5,34 +5,34 @@ using static System.Net.Mime.MediaTypeNames;
 
 namespace EiSys.GestaoDeEstoque.Domain.Entities
 {
-    sealed class Produto : EntitieBase
+    public sealed class Produto : EntitieBase
     {
         public string? Nome { get; private set; }
         public string? Descricao { get; private set; }
-        public double Preco {  get; private set; }
+        public decimal Preco {  get; private set; }
         public int Estoque { get; set; }
         public string? Imagem { get; private set; }
 
-        public Produto(string nome, string descricao, double preco, int estoque, string imagem)
+        public Produto(string nome, string descricao, decimal preco, int estoque, string imagem)
         {
             ValidaDominio(nome, descricao, preco, estoque, imagem);
         }
 
-        public Produto(int id, string nome, string descricao, double preco, int estoque, string imagem)
+        public Produto(int id, string nome, string descricao, decimal preco, int estoque, string imagem)
         {
             DomainExceptionValidation.when(id < 0, "Valor Invalido");
             Id = id;
             ValidaDominio(nome, descricao, preco, estoque, imagem);
         }
 
-        public void update(string nome, string descricao, double preco, int estoque, string imagem, int idCategoria)
+        public void update(string nome, string descricao, decimal preco, int estoque, string imagem, int idCategoria)
         {
             ValidaDominio(nome, descricao, preco, estoque, imagem);
             IdCategoria = idCategoria;
         }
 
 
-        private void ValidaDominio(string nome, string descricao, double preco,int estoque, string imagem)
+        private void ValidaDominio(string nome, string descricao, decimal preco,int estoque, string imagem)
         {
             //Validamos se o nome for menor que 3 caracteres
             //se o nome vem como nulo. 
