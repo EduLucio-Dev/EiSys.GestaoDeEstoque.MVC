@@ -26,8 +26,10 @@ namespace EiSys.GestaoDeEstoque.Data.Context
             // Chamando a implementação da classe base
             base.OnModelCreating(Builder);
 
-            // Aplicando configurações de mapeamento contidas no mesmo assembly que ApplicationDbContext
+            // Sobrescrevendo o método de configuração do modelo para aplicar automaticamente as configurações de mapeamento 
+            // contidas no mesmo assembly que a classe ApplicationDbContext. Isso evita a necessidade de configurar cada entidade manualmente.
             Builder.ApplyConfigurationsFromAssembly(typeof(ApplicationDbContext).Assembly);
+
         }
     }
 
